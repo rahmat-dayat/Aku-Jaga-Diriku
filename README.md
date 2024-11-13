@@ -1,0 +1,2 @@
+# Aku Jaga Diriku
+ 
