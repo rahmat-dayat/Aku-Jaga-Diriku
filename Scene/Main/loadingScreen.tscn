@@ -5,7 +5,7 @@
 [ext_resource path="res://Asset/Home/Logo.png" type="Texture" id=3]
 [ext_resource path="res://Scene/Main/loadingScreen.gd" type="Script" id=4]
 [ext_resource path="res://Scene/Main/loadingScreen.tres" type="DynamicFont" id=5]
-[ext_resource path="res://Asset/audio/Aku_20Jaga_20Diriku.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Scene/animasi/scene1/animasi_scene_201_20narator.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Asset/Quicksand/MoreSugar-Thin.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="DynamicFont" id=1]
