@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tangan_20Kiri.mp3-b7139ad7da0ea5753081d665daff396a.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Tangan_20Kiri.mp3"
+dest_files=[ "res://.import/Tangan_20Kiri.mp3-b7139ad7da0ea5753081d665daff396a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

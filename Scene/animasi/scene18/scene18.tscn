@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/animasi/scene18/Karakter Scene 18.1.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene15/Latar Scene 15 Animasi.png" type="Texture" id=3]
+[ext_resource path="res://Scene/animasi/scene18/animasi_scene_2018_20narator.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Scene/animasi/scene18/scene18.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 10.0
+tracks/0/type = "method"
+tracks/0/path = NodePath("..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 9.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "music"
+}, {
+"args": [  ],
+"method": "change"
+} ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 4 )
+} ],
+"times": PoolRealArray( 0 )
+}
+
+[node name="scene18" instance=ExtResource( 1 )]
+script = ExtResource( 5 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 3 )
+
+[node name="narasi" parent="." index="2"]
+stream = ExtResource( 4 )
+volume_db = 5.0
+
+[node name="ceritaGui" parent="." index="3"]
+back_scene = "res://Scene/animasi/scene17/scene17.tscn"
+next_scene = "res://Scene/animasi/scene19_/scene19.tscn"
+
+[node name="KarakterScene181" type="Sprite" parent="." index="4"]
+position = Vector2( 640, 392 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
+root_node = NodePath("../narasi")
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 1 )

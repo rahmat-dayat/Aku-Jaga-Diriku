@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/suara_20mengelap_20tangan.mp3-dcc6eebbeca6c42d9b84bbf06475c962.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/suara_20mengelap_20tangan.mp3"
+dest_files=[ "res://.import/suara_20mengelap_20tangan.mp3-dcc6eebbeca6c42d9b84bbf06475c962.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

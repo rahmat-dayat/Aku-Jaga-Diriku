@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/suara_20pintu.mp3-372f1062bfed3ee9c6cf214672ec5f58.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/suara_20pintu.mp3"
+dest_files=[ "res://.import/suara_20pintu.mp3-372f1062bfed3ee9c6cf214672ec5f58.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

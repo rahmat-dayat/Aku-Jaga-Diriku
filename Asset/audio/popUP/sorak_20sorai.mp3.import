@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sorak_20sorai.mp3-4b2ae5df7ed4f77ae926effd7b93c2ee.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/sorak_20sorai.mp3"
+dest_files=[ "res://.import/sorak_20sorai.mp3-4b2ae5df7ed4f77ae926effd7b93c2ee.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

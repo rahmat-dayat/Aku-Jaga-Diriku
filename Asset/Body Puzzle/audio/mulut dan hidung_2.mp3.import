@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mulut dan hidung_2.mp3-3aa1b5f77404ce79cefeb7c2473c41b3.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/mulut dan hidung_2.mp3"
+dest_files=[ "res://.import/mulut dan hidung_2.mp3-3aa1b5f77404ce79cefeb7c2473c41b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

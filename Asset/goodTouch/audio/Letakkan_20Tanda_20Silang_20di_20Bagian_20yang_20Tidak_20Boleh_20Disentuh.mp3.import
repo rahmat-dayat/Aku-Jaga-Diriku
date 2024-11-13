@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Letakkan_20Tanda_20Silang_20di_20Bagian_20yang_20Tidak_20Boleh_20Disentuh.mp3-23ee995bfce28ff9a256602f1a2126d7.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Letakkan_20Tanda_20Silang_20di_20Bagian_20yang_20Tidak_20Boleh_20Disentuh.mp3"
+dest_files=[ "res://.import/Letakkan_20Tanda_20Silang_20di_20Bagian_20yang_20Tidak_20Boleh_20Disentuh.mp3-23ee995bfce28ff9a256602f1a2126d7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

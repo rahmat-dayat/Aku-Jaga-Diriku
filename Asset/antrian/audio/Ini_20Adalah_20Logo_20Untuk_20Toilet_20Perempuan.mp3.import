@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.mp3-fca67d7c42b14f47d58c92755e580a79.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.mp3"
+dest_files=[ "res://.import/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.mp3-fca67d7c42b14f47d58c92755e580a79.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

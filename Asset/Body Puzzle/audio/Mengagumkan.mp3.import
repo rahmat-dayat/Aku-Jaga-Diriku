@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mengagumkan.mp3-6ca754e9a85805ff894856d93c6b0047.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Mengagumkan.mp3"
+dest_files=[ "res://.import/Mengagumkan.mp3-6ca754e9a85805ff894856d93c6b0047.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

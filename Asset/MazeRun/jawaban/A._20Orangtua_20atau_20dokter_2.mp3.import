@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/A._20Orangtua_20atau_20dokter_2.mp3-762c59f392ec61cf5f6bece26365a4dd.mp3str"
+
+[deps]
+
+source_file="res://Asset/MazeRun/jawaban/A._20Orangtua_20atau_20dokter_2.mp3"
+dest_files=[ "res://.import/A._20Orangtua_20atau_20dokter_2.mp3-762c59f392ec61cf5f6bece26365a4dd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

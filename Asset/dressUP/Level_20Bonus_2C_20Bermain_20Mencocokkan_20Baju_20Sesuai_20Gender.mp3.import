@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Level_20Bonus_2C_20Bermain_20Mencocokkan_20Baju_20Sesuai_20Gender.mp3-677b62e53d5dd3b6edd391bcc90828c9.mp3str"
+
+[deps]
+
+source_file="res://Asset/dressUP/Level_20Bonus_2C_20Bermain_20Mencocokkan_20Baju_20Sesuai_20Gender.mp3"
+dest_files=[ "res://.import/Level_20Bonus_2C_20Bermain_20Mencocokkan_20Baju_20Sesuai_20Gender.mp3-677b62e53d5dd3b6edd391bcc90828c9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mixkit-musical-game-over-959.mp3-df91b9508ee39b94a6a033fe52403da6.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/mixkit-musical-game-over-959.mp3"
+dest_files=[ "res://.import/mixkit-musical-game-over-959.mp3-df91b9508ee39b94a6a033fe52403da6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

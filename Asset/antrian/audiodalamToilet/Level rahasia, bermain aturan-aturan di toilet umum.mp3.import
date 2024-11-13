@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Level rahasia, bermain aturan-aturan di toilet umum.mp3-4028c3570d73e177fea6e94fd0493990.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/Level rahasia, bermain aturan-aturan di toilet umum.mp3"
+dest_files=[ "res://.import/Level rahasia, bermain aturan-aturan di toilet umum.mp3-4028c3570d73e177fea6e94fd0493990.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

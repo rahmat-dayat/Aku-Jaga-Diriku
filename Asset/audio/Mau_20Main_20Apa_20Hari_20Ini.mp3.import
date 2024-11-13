@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mau_20Main_20Apa_20Hari_20Ini.mp3-ffc525cb6e2500e22c60ffd618f9a473.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/Mau_20Main_20Apa_20Hari_20Ini.mp3"
+dest_files=[ "res://.import/Mau_20Main_20Apa_20Hari_20Ini.mp3-ffc525cb6e2500e22c60ffd618f9a473.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

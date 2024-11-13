@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/scene-6-bocil-ribut.mp3-b18adeccd1bb61b4c6a6856c92910a52.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene6/scene-6-bocil-ribut.mp3"
+dest_files=[ "res://.import/scene-6-bocil-ribut.mp3-b18adeccd1bb61b4c6a6856c92910a52.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

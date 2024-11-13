@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/main menu theme song fix (1).ogg-19c2e93324279c825a2ab702f003f8f0.oggstr"
+
+[deps]
+
+source_file="res://Asset/audio/main menu theme song fix (1).ogg"
+dest_files=[ "res://.import/main menu theme song fix (1).ogg-19c2e93324279c825a2ab702f003f8f0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

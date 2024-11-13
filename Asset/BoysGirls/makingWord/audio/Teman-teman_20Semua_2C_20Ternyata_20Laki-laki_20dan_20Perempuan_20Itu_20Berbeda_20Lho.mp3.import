@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Teman-teman_20Semua_2C_20Ternyata_20Laki-laki_20dan_20Perempuan_20Itu_20Berbeda_20Lho.mp3-81be07d6a0cef9daa1d481f9a62ac415.mp3str"
+
+[deps]
+
+source_file="res://Asset/BoysGirls/makingWord/audio/Teman-teman_20Semua_2C_20Ternyata_20Laki-laki_20dan_20Perempuan_20Itu_20Berbeda_20Lho.mp3"
+dest_files=[ "res://.import/Teman-teman_20Semua_2C_20Ternyata_20Laki-laki_20dan_20Perempuan_20Itu_20Berbeda_20Lho.mp3-81be07d6a0cef9daa1d481f9a62ac415.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

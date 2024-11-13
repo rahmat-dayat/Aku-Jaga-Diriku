@@ -1,0 +1,722 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/Home/Latar Game Basic.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 19.1.png" type="Texture" id=3]
+[ext_resource path="res://Scene/animasi/scene7_8/Karakter Scene 9.4.png" type="Texture" id=4]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 19.2.png" type="Texture" id=5]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2027_20narator.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2019_20narator.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2023_20narator.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2020_20B.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2026_20narator.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 21.4.png" type="Texture" id=11]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2021_20narator.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 20.4.png" type="Texture" id=13]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2022_20narator.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 22.3.png" type="Texture" id=15]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2024_20narator.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 23.3.png" type="Texture" id=17]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2029_20narator.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 24.3.png" type="Texture" id=19]
+[ext_resource path="res://Scene/animasi/scene1/Karakter Scene 1.png" type="Texture" id=20]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 26.3.png" type="Texture" id=21]
+[ext_resource path="res://Scene/animasi/scene19_/Latar Scene 7.png" type="Texture" id=22]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 28.5.png" type="Texture" id=23]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2031_20narator.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2028_20A.mp3" type="AudioStream" id=25]
+[ext_resource path="res://Scene/animasi/scene19_/animasi_scene_2032_20narator.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 29.2.png" type="Texture" id=27]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 31.3.png" type="Texture" id=28]
+[ext_resource path="res://Scene/animasi/scene19_/Karakter Scene 32.1.png" type="Texture" id=29]
+[ext_resource path="res://Scene/animasi/scene19_/scene19.gd" type="Script" id=30]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("guru:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1082, 529 ), Vector2( 1082, 532.875 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("guru:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ), Vector2( 0.7, 0.68578 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("guru:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1082, 529 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("guru:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("19:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("20:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("21b:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("21a:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("22:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("23:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("24:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("25:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("26:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("27:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("27a:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("28:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("29:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("30:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("guru:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("narasi:volume_db")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -10.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "STORY"
+length = 119.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("19:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 11.1, 11.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("20:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 13.8, 14.4, 18, 18.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("21b:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 19.5, 19.9, 24.6, 24.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("21a:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 21.4, 22, 24.6, 24.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("22:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 26.1, 26.8, 39.5, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("23:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 41.5, 42.2, 49.7, 50.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("24:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 51.1, 51.5, 65.3, 65.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("25:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 67.6, 68.2, 76.3, 76.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("26:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 77.5, 77.8, 85.8, 86.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("27:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 87.5, 88.2, 96.1, 96.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("27a:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 87.5, 88.2, 96.1, 96.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("28:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 97.5, 98.4, 103.3, 103.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("29:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 104.8, 105.2, 111.2, 111.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("30:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 113, 113.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("guru:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 111.311, 112.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "method"
+tracks/15/path = NodePath(".")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 118.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "music"
+}, {
+"args": [  ],
+"method": "change"
+} ]
+}
+tracks/16/type = "audio"
+tracks/16/path = NodePath("narasi")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 7 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 12 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 14 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 16 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 10 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 6 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 25 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 18 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 24 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 26 )
+} ],
+"times": PoolRealArray( 0.1, 13.6, 19.1, 25.8, 41.1, 51.4, 67.5, 77.9, 88.6, 98.3, 105.1, 113.1 )
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("narasi:volume_db")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0.1, 105.1, 111.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0.0, 0.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("guru:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1082, 529 ), Vector2( 1082, 532.875 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("guru:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ), Vector2( 0.7, 0.68578 ) ]
+}
+
+[node name="scene19" instance=ExtResource( 1 )]
+script = ExtResource( 30 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="narasi" parent="." index="2"]
+stream = ExtResource( 26 )
+volume_db = -10.0
+
+[node name="ceritaGui" parent="." index="3"]
+back_scene = "res://Scene/animasi/scene18/scene18.tscn"
+
+[node name="TextureRect3" parent="ceritaGui" index="2"]
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="4"]
+autoplay = "STORY"
+"anims/New Anim" = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+anims/STORY = SubResource( 3 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="5"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 4 )
+
+[node name="guru" type="Sprite" parent="." index="6"]
+position = Vector2( 1082, 529 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 739, 175, 508, 545 )
+
+[node name="19" type="Sprite" parent="." index="7"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 551, 351 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 235, 127, 491, 494 )
+
+[node name="20" type="Sprite" parent="." index="8"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 611, 348 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 149, 193, 559, 344 )
+
+[node name="21a" type="Sprite" parent="." index="9"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 452, 371 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 149, 193, 559, 344 )
+
+[node name="21b" type="Sprite" parent="." index="10"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 634, 418 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 940, 378, 115, 334 )
+
+[node name="22" type="Sprite" parent="." index="11"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 566, 354 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 110, 160, 660, 430 )
+
+[node name="23" type="Sprite" parent="." index="12"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 616, 422 )
+texture = ExtResource( 17 )
+region_enabled = true
+region_rect = Rect2( 130, 170, 610, 380 )
+
+[node name="24" type="Sprite" parent="." index="13"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 609, 412 )
+texture = ExtResource( 19 )
+region_enabled = true
+region_rect = Rect2( 120, 180, 630, 380 )
+
+[node name="25" type="Sprite" parent="." index="14"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 590, 368 )
+texture = ExtResource( 21 )
+region_enabled = true
+region_rect = Rect2( 268, 192, 419, 298 )
+
+[node name="26" type="Sprite" parent="." index="15"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 582, 382 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 22 )
+region_enabled = true
+region_rect = Rect2( 220, 160, 820, 560 )
+
+[node name="27" type="Sprite" parent="." index="16"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 582, 382 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+region_enabled = true
+region_rect = Rect2( 361, 127, 351, 392 )
+
+[node name="27a" type="Sprite" parent="." index="17"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 459, 437 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 20 )
+region_enabled = true
+region_rect = Rect2( 376, 277, 212, 400 )
+
+[node name="28" type="Sprite" parent="." index="18"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 499, 346 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 27 )
+region_enabled = true
+region_rect = Rect2( 150, 131, 587, 421 )
+
+[node name="29" type="Sprite" parent="." index="19"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 499, 346 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 28 )
+region_enabled = true
+region_rect = Rect2( 330, 130, 360, 410 )
+
+[node name="30" type="Sprite" parent="." index="20"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 601, 462 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 410, 170, 460, 580 )
+
+[editable path="ceritaGui"]

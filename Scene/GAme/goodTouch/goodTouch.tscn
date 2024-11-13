@@ -1,0 +1,308 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Asset/Home/Latar Game Basic.png" type="Texture" id=1]
+[ext_resource path="res://Asset/Quicksand/static/leslie.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scene/GAme/goodTouch/goodTouch.gd" type="Script" id=3]
+[ext_resource path="res://Asset/goodTouch/Laki-laki Good Touch Depan.png" type="Texture" id=4]
+[ext_resource path="res://Asset/goodTouch/Panah.png" type="Texture" id=5]
+[ext_resource path="res://Scene/Main/GUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Asset/goodTouch/audio/Maaf_2C_20Coba_20Lagi_20Ya.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Asset/goodTouch/Laki-laki Good Touch Belakang.png" type="Texture" id=8]
+[ext_resource path="res://Scene/Main/gameMenu.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Asset/antrian/Cara Bermain BG.png" type="Texture" id=10]
+[ext_resource path="res://Asset/Quicksand/MoreSugar-Thin.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Asset/goodTouch/Bad Button.png" type="Texture" id=12]
+[ext_resource path="res://Asset/goodTouch/audio/Bagian_20Tubuh_20yang_20Tidak_20Boleh_20di_20Sentuh.mp3" type="AudioStream" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 1
+outline_color = Color( 1, 1, 1, 0 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 35
+font_data = ExtResource( 11 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 16.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 24.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 17.088
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 18.9737
+
+[sub_resource type="Animation" id=7]
+resource_name = "New Anim"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("starting:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("starting:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="goodTouch" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="karakterDepan" type="TextureRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -408.0
+margin_top = -152.0
+margin_right = -108.0
+margin_bottom = 148.0
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="karakterBelakang" type="TextureRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 48.0
+margin_top = -160.0
+margin_right = 348.0
+margin_bottom = 140.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+modulate = Color( 0.286275, 0.286275, 0.286275, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -448.0
+margin_top = -287.0
+margin_right = 424.0
+margin_bottom = -162.0
+custom_fonts/font = SubResource( 1 )
+text = "Letakan tanda Silang di bagian yang tidak boleh
+disentuh..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="starting" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="starting"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="starting"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -305.5
+margin_top = -40.5
+margin_right = 305.5
+margin_bottom = 40.5
+custom_fonts/font = SubResource( 6 )
+text = "Bermain bagian tubuh yang 
+tidak boleh disentuh"
+align = 1
+valign = 1
+
+[node name="BadButton" type="Sprite" parent="starting"]
+position = Vector2( 392, 243 )
+texture = ExtResource( 12 )
+
+[node name="BadButton2" type="Sprite" parent="starting"]
+position = Vector2( 465, 493 )
+texture = ExtResource( 12 )
+
+[node name="BadButton4" type="Sprite" parent="starting"]
+position = Vector2( 838, 489 )
+texture = ExtResource( 12 )
+
+[node name="BadButton3" type="Sprite" parent="starting"]
+position = Vector2( 926, 248 )
+texture = ExtResource( 12 )
+
+[node name="object" type="Node2D" parent="."]
+
+[node name="silang" type="Position2D" parent="object"]
+position = Vector2( 600, 592 )
+
+[node name="silang2" type="Position2D" parent="object"]
+position = Vector2( 712, 592 )
+
+[node name="AREA" type="Node2D" parent="."]
+
+[node name="mulut" type="Area2D" parent="AREA"]
+position = Vector2( 563, 298 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/mulut"]
+position = Vector2( -24, 6 )
+shape = SubResource( 2 )
+
+[node name="dada" type="Area2D" parent="AREA"]
+position = Vector2( 199, 320 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/dada"]
+position = Vector2( 33, -24 )
+shape = SubResource( 3 )
+
+[node name="tangan" type="Area2D" parent="AREA"]
+position = Vector2( 152, 414 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/tangan"]
+shape = SubResource( 4 )
+
+[node name="Kemaluan" type="Area2D" parent="AREA"]
+position = Vector2( 560, 408 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/Kemaluan"]
+position = Vector2( -24, 16 )
+shape = SubResource( 5 )
+
+[node name="pantat" type="Area2D" parent="AREA"]
+position = Vector2( 1016, 392 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/pantat"]
+position = Vector2( -24, 0 )
+shape = SubResource( 5 )
+
+[node name="kepala2" type="Area2D" parent="AREA"]
+position = Vector2( 664, 448 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AREA/kepala2"]
+position = Vector2( 8, 8 )
+shape = SubResource( 5 )
+
+[node name="Panah" type="Sprite" parent="."]
+visible = false
+position = Vector2( 452, 305 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+
+[node name="Panah4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 259.5, 408 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="Panah3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 314.5, 328 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+flip_h = true
+flip_v = true
+
+[node name="Panah2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 447.5, 404 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+
+[node name="Panah5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 904, 392 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+
+[node name="Panah6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 760, 456 )
+scale = Vector2( 1.35, 1 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource( 6 )]
+backScene = ExtResource( 9 )
+startTimer = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="starting2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/New Anim" = SubResource( 7 )
+anims/RESET = SubResource( 8 )
+
+[connection signal="body_entered" from="AREA/mulut" to="." method="_on_kepala_body_entered"]
+[connection signal="body_exited" from="AREA/mulut" to="." method="_on_kepala_body_exited"]
+[connection signal="body_entered" from="AREA/dada" to="." method="_on_dada_body_entered"]
+[connection signal="body_exited" from="AREA/dada" to="." method="_on_dada_body_exited"]
+[connection signal="body_entered" from="AREA/tangan" to="." method="_on_tangan_body_entered"]
+[connection signal="body_exited" from="AREA/tangan" to="." method="_on_tangan_body_exited"]
+[connection signal="body_entered" from="AREA/Kemaluan" to="." method="_on_Kemaluan_body_entered"]
+[connection signal="body_exited" from="AREA/Kemaluan" to="." method="_on_Kemaluan_body_exited"]
+[connection signal="body_entered" from="AREA/pantat" to="." method="_on_pantat_body_entered"]
+[connection signal="body_exited" from="AREA/pantat" to="." method="_on_pantat_body_exited"]
+[connection signal="body_entered" from="AREA/kepala2" to="." method="_on_kepala2_body_entered"]
+[connection signal="body_exited" from="AREA/kepala2" to="." method="_on_kepala2_body_exited"]

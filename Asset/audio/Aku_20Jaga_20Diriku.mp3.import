@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Aku_20Jaga_20Diriku.mp3-81503794da096f4ddb50a1b2d9fca29a.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/Aku_20Jaga_20Diriku.mp3"
+dest_files=[ "res://.import/Aku_20Jaga_20Diriku.mp3-81503794da096f4ddb50a1b2d9fca29a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

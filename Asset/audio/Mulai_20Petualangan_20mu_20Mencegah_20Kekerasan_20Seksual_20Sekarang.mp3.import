@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mulai_20Petualangan_20mu_20Mencegah_20Kekerasan_20Seksual_20Sekarang.mp3-b318b1d3fbad12aeed8192b079129088.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/Mulai_20Petualangan_20mu_20Mencegah_20Kekerasan_20Seksual_20Sekarang.mp3"
+dest_files=[ "res://.import/Mulai_20Petualangan_20mu_20Mencegah_20Kekerasan_20Seksual_20Sekarang.mp3-b318b1d3fbad12aeed8192b079129088.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

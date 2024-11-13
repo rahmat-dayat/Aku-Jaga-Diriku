@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lengkapilah_20Kotak-kotak_20yang_20Kosong_20Menjadi_20Kata_20yang_20Benar.mp3-da9707d5e6449e9ef15e536bd16caa14.mp3str"
+
+[deps]
+
+source_file="res://Asset/BoysGirls/makingWord/audio/Lengkapilah_20Kotak-kotak_20yang_20Kosong_20Menjadi_20Kata_20yang_20Benar.mp3"
+dest_files=[ "res://.import/Lengkapilah_20Kotak-kotak_20yang_20Kosong_20Menjadi_20Kata_20yang_20Benar.mp3-da9707d5e6449e9ef15e536bd16caa14.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

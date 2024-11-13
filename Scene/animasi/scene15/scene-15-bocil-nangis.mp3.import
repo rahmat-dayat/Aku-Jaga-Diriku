@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/scene-15-bocil-nangis.mp3-a28e34dc762952c48ce304100ddebc92.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene15/scene-15-bocil-nangis.mp3"
+dest_files=[ "res://.import/scene-15-bocil-nangis.mp3-a28e34dc762952c48ce304100ddebc92.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

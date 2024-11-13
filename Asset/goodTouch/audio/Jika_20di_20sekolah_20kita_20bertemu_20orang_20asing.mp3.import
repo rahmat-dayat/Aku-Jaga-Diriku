@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing.mp3-8532b3f2b4e5f8c811f35288d1478b46.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing.mp3"
+dest_files=[ "res://.import/Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing.mp3-8532b3f2b4e5f8c811f35288d1478b46.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

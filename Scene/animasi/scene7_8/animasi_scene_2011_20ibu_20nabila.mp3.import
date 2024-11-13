@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/animasi_scene_2011_20ibu_20nabila.mp3-1895d538fbb6f650079d75a9d9fc5b7e.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene7_8/animasi_scene_2011_20ibu_20nabila.mp3"
+dest_files=[ "res://.import/animasi_scene_2011_20ibu_20nabila.mp3-1895d538fbb6f650079d75a9d9fc5b7e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bermain_20Bagian_20Tubuh_20yang_20Tidak_20Boleh_20Disentuh.mp3-a191a1b2a8b4dd98c4aad8bee48e033e.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Bermain_20Bagian_20Tubuh_20yang_20Tidak_20Boleh_20Disentuh.mp3"
+dest_files=[ "res://.import/Bermain_20Bagian_20Tubuh_20yang_20Tidak_20Boleh_20Disentuh.mp3-a191a1b2a8b4dd98c4aad8bee48e033e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

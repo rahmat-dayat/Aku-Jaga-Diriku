@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/animasi/scene17/Latar Scene 17.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene17/animasi_scene_2017_20narator.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Scene/animasi/scene17/scene17.gd" type="Script" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 5.8
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 5.3, 5.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "music"
+}, {
+"args": [  ],
+"method": "change"
+} ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("narasi")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 0 )
+}
+
+[node name="scene17" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="narasi" parent="." index="2"]
+stream = ExtResource( 3 )
+volume_db = 10.0
+
+[node name="ceritaGui" parent="." index="3"]
+back_scene = "res://Scene/animasi/scene15/scene15.tscn"
+next_scene = "res://Scene/animasi/scene18/scene18.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="4"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 1 )

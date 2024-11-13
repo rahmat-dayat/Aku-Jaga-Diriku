@@ -1,0 +1,123 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+
+onready var BGM = $bgm
+onready var Sfx = $sfx
+
+var mute = false
+var themeSong = load(\"res://Asset/audio/main menu theme song fix (1).ogg\")
+var ThemeMusic = false
+var click = load(\"res://Asset/audio/game-click.mp3\")
+var dop = load(\"res://Asset/audio/dop.wav\")
+var trring = load(\"res://Asset/audio/tring.mp3\")
+var tetot = load(\"res://Asset/audio/tetot.mp3\")
+var tegang = load(\"res://Scene/animasi/mencekam-mixkit-fright-night-871.mp3\")
+var sedih = load(\"res://Scene/animasi/sad-mixkit-when-in-love-44.mp3\")
+func _ready():
+	pass
+
+func themeMusic():
+	if ThemeMusic == false:
+		BGM.volume_db = 0
+		BGM.stream = themeSong
+		BGM.play()
+		ThemeMusic = true
+		
+func sfxTegang():
+	ThemeMusic = false
+	BGM.stream = tegang
+	BGM.play()
+
+func sfxSedih():
+	ThemeMusic = false
+	BGM.stream = sedih
+	BGM.play()
+	
+func sfxSound(path):
+	Sfx.volume_db = 5
+	Sfx.stream = click
+	Sfx.play()
+	yield(Sfx,\"finished\")
+# warning-ignore:return_value_discarded
+	get_tree().change_scene(path)
+
+func sfxSoundcopy():
+	Sfx.stream = click
+	Sfx.play()
+	Sfx.volume_db = 5
+func sfxDop():
+	Sfx.volume_db = 20
+	Sfx.stream = dop
+	Sfx.play()
+
+func tring_next(path):
+	Sfx.volume_db = 5
+	Sfx.stream = trring
+	Sfx.play()
+	yield(get_tree().create_timer(0.9),\"timeout\")
+# warning-ignore:return_value_discarded
+	Transition.change_scene(path)
+	
+func sfxTring():
+	Sfx.volume_db = 5
+	Sfx.stream = trring
+	Sfx.play()
+
+func sfxSalah():
+	Sfx.volume_db = 0
+	Sfx.stream = tetot
+	Sfx.play()
+
+func resetSound():
+	BGM.volume_db = -3
+	Sfx.volume_db = 5
+"
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+
+[sub_resource type="Animation" id=3]
+resource_name = "keluar"
+tracks/0/type = "value"
+tracks/0/path = NodePath("bgm:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 5.0, -10.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "masuk"
+tracks/0/type = "value"
+tracks/0/path = NodePath("bgm:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -10.0, 5.0 ]
+}
+
+[node name="musicController" type="Node"]
+script = SubResource( 1 )
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="sfx" type="AudioStreamPlayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/keluar = SubResource( 3 )
+anims/masuk = SubResource( 4 )

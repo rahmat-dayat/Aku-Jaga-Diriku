@@ -1,0 +1,8 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Asset/Quicksand/MoreSugar-Thin.ttf" type="DynamicFontData" id=1]
+
+[resource]
+size = 32
+outline_color = Color( 0.47451, 0.482353, 0.462745, 0.890196 )
+font_data = ExtResource( 1 )

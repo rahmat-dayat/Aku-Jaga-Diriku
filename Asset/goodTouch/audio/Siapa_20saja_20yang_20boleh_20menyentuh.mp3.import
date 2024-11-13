@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Siapa_20saja_20yang_20boleh_20menyentuh.mp3-a9749f98df6451cf611cc9549f68316c.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Siapa_20saja_20yang_20boleh_20menyentuh.mp3"
+dest_files=[ "res://.import/Siapa_20saja_20yang_20boleh_20menyentuh.mp3-a9749f98df6451cf611cc9549f68316c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

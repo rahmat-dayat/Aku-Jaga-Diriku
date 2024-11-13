@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Benar.mp3-4d28afb55059b849c0b7598b20f592d6.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Benar.mp3"
+dest_files=[ "res://.import/Benar.mp3-4d28afb55059b849c0b7598b20f592d6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

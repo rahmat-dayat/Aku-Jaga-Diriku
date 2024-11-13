@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/[ ] Jika bertemu orang asing mencurigakan, siapa yang harus kita beritahu_1 (1).mp3-16aafe664a8863a7a19b4ef420debd5e.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/[ ] Jika bertemu orang asing mencurigakan, siapa yang harus kita beritahu_1 (1).mp3"
+dest_files=[ "res://.import/[ ] Jika bertemu orang asing mencurigakan, siapa yang harus kita beritahu_1 (1).mp3-16aafe664a8863a7a19b4ef420debd5e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

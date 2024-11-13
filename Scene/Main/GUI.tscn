@@ -1,0 +1,721 @@
+[gd_scene load_steps=39 format=2]
+
+[ext_resource path="res://Asset/audio/popUP/mixkit-musical-game-over-959.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Asset/Main Menu/Kembali Button.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Quicksand/MoreSugar-Thin.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Asset/Quicksand/static/Quicksand-Light.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scene/Main/GUI.gd" type="Script" id=5]
+[ext_resource path="res://Asset/Home/Pop Up Polos.png" type="Texture" id=6]
+[ext_resource path="res://Asset/Home/Bintang Putih.png" type="Texture" id=7]
+[ext_resource path="res://Asset/Home/Bintang Pink.png" type="Texture" id=8]
+[ext_resource path="res://Asset/Main Menu/Keluar Button.png" type="Texture" id=9]
+[ext_resource path="res://Asset/Main Menu/Ulangi Button.png" type="Texture" id=10]
+[ext_resource path="res://Scene/Main/Quit.gd" type="Script" id=11]
+[ext_resource path="res://Scene/Main/PopupScoreGame.gd" type="Script" id=12]
+[ext_resource path="res://Scene/Main/MainMenu.tres" type="DynamicFont" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+draw_center = false
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=5]
+draw_center = false
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+outline_size = 1
+outline_color = Color( 1, 1, 1, 0.654902 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.556863, 0.74902, 0.8, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.917647, 0.917647, 0.917647, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+outline_size = 2
+outline_color = Color( 0.152941, 0.137255, 0.137255, 0.0352941 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.498039, 0.819608, 0.533333, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=10]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.815686, 0.407843, 0.407843, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=12]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.27451, 0.756863, 0.901961, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 1, 0.976471, 0.976471, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color( 0, 0, 0, 0.333333 )
+shadow_size = 4
+shadow_offset = Vector2( 10, 10 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.227451, 0.478431, 0.913725, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.533333, 0.533333, 0.533333, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=20]
+size = 38
+outline_size = 1
+outline_color = Color( 0.690196, 0.690196, 0.690196, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 31
+outline_size = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.52549, 0.741176, 0.964706, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.533333, 0.533333, 0.533333, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=22]
+size = 38
+outline_size = 1
+outline_color = Color( 0.121569, 0.121569, 0.121569, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 31
+outline_size = 1
+outline_color = Color( 0.121569, 0.121569, 0.121569, 0.729412 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.337255, 0.843137, 0.678431, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.533333, 0.533333, 0.533333, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=24]
+size = 39
+outline_size = 1
+outline_color = Color( 0.47451, 0.482353, 0.462745, 0.890196 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.235294, 0.658824, 0.862745, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.533333, 0.533333, 0.533333, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=25]
+size = 45
+outline_size = 1
+outline_color = Color( 0.47451, 0.482353, 0.462745, 0.890196 )
+font_data = ExtResource( 3 )
+
+[node name="GUI" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+mouse_filter = 2
+script = ExtResource( 5 )
+
+[node name="TopButtton" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 109.0
+
+[node name="TextureButton" type="TextureButton" parent="TopButtton"]
+margin_right = 181.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="timer" type="Label" parent="TopButtton"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 185.0
+margin_right = 1094.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 1
+
+[node name="TextureButton3" type="TextureButton" parent="TopButtton"]
+margin_left = 1098.0
+margin_right = 1280.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+disabled = true
+expand = true
+stretch_mode = 5
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="PopupScoreGame" type="Panel" parent="."]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 2 )
+script = ExtResource( 12 )
+
+[node name="TextureRect2" type="TextureRect" parent="PopupScoreGame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Label" type="Label" parent="PopupScoreGame/TextureRect2"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 492.0
+margin_top = 123.0
+margin_right = 796.0
+margin_bottom = 226.0
+custom_fonts/font = SubResource( 3 )
+text = "Game Selesai"
+align = 1
+valign = 1
+
+[node name="star" type="Panel" parent="PopupScoreGame"]
+margin_left = 474.0
+margin_top = 278.0
+margin_right = 810.0
+margin_bottom = 372.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="emptystar" type="HBoxContainer" parent="PopupScoreGame/star"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="PopupScoreGame/star/emptystar"]
+margin_right = 64.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="PopupScoreGame/star/emptystar"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="PopupScoreGame/star/emptystar"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="PopupScoreGame/star/emptystar"]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect5" type="TextureRect" parent="PopupScoreGame/star/emptystar"]
+margin_left = 272.0
+margin_right = 336.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="star1" type="TextureRect" parent="PopupScoreGame/star"]
+margin_right = 64.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="star2" type="TextureRect" parent="PopupScoreGame/star"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="star3" type="TextureRect" parent="PopupScoreGame/star"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="star4" type="TextureRect" parent="PopupScoreGame/star"]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="star5" type="TextureRect" parent="PopupScoreGame/star"]
+margin_left = 272.0
+margin_right = 336.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="kalimat" type="Panel" parent="PopupScoreGame"]
+margin_left = 326.0
+margin_top = 368.0
+margin_right = 967.0
+margin_bottom = 461.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PopupScoreGame/kalimat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 6 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Button" type="Panel" parent="PopupScoreGame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = 112.0
+margin_right = 192.0
+margin_bottom = 205.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PopupScoreGame/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="keluar" type="TextureButton" parent="PopupScoreGame/Button/HBoxContainer"]
+margin_right = 186.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 9 )
+expand = true
+stretch_mode = 5
+
+[node name="restart" type="TextureButton" parent="PopupScoreGame/Button/HBoxContainer"]
+margin_left = 190.0
+margin_right = 376.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+
+[node name="narasi" type="AudioStreamPlayer" parent="PopupScoreGame"]
+
+[node name="sfx" type="AudioStreamPlayer" parent="PopupScoreGame"]
+stream = ExtResource( 1 )
+
+[node name="Quit" type="Panel" parent="."]
+pause_mode = 2
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -125.0
+margin_right = 250.0
+margin_bottom = 125.0
+custom_styles/panel = SubResource( 8 )
+script = ExtResource( 11 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Quit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="Quit/VBoxContainer"]
+modulate = Color( 0.235294, 0.215686, 0.215686, 1 )
+margin_right = 500.0
+margin_bottom = 123.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 7 )
+text = "Yakin ingin Keluar"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Quit/VBoxContainer"]
+margin_top = 127.0
+margin_right = 500.0
+margin_bottom = 250.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="Quit/VBoxContainer/HBoxContainer"]
+margin_right = 248.0
+margin_bottom = 123.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 9 )
+
+[node name="quit" type="Button" parent="Quit/VBoxContainer/HBoxContainer/Panel"]
+modulate = Color( 0.337255, 0.254902, 0.254902, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 10 )
+text = "Iya"
+flat = true
+
+[node name="Panel2" type="Panel" parent="Quit/VBoxContainer/HBoxContainer"]
+margin_left = 252.0
+margin_right = 500.0
+margin_bottom = 123.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 11 )
+
+[node name="batal" type="Button" parent="Quit/VBoxContainer/HBoxContainer/Panel2"]
+modulate = Color( 0.137255, 0.109804, 0.109804, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 12 )
+text = "Tidak"
+flat = true
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0.443137, 0.443137, 0.443137, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -104.0
+margin_top = 317.0
+margin_right = 115.0
+margin_bottom = 348.0
+custom_fonts/font = SubResource( 13 )
+text = "By Universitas Jambi"
+
+[node name="popUpCredit" type="Panel" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -470.5
+margin_top = -241.5
+margin_right = 470.5
+margin_bottom = 241.5
+custom_styles/panel = SubResource( 14 )
+
+[node name="Label" type="Label" parent="popUpCredit"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -470.5
+margin_right = 470.5
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 15 )
+text = "Credits"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="popUpCredit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 64.0
+margin_right = -11.0
+margin_bottom = -8.0
+custom_constants/separation = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="popUpCredit/HBoxContainer"]
+margin_right = 457.0
+margin_bottom = 411.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 7
+
+[node name="Panel" type="Panel" parent="popUpCredit/HBoxContainer/VBoxContainer"]
+margin_right = 457.0
+margin_bottom = 276.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 16 )
+
+[node name="Label" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_bottom = 1.0
+custom_fonts/font = SubResource( 20 )
+text = "Developer
+"
+align = 1
+
+[node name="Label2" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.5
+margin_top = 24.5
+margin_right = -2.5
+margin_bottom = 6.5
+custom_colors/font_outline_modulate = Color( 0.184314, 0.129412, 0.129412, 0.545098 )
+custom_fonts/font = SubResource( 21 )
+text = "
+Dr. Indryani, S.Pd, M.Pd.I
+Ulfa Khaira S.Komp, M.Kom
+Akhmad Fikri Rosyadi, S.Pd, M.Pd
+Rahmat Hidayat
+"
+align = 1
+
+[node name="Panel2" type="Panel" parent="popUpCredit/HBoxContainer/VBoxContainer"]
+margin_top = 283.0
+margin_right = 457.0
+margin_bottom = 411.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.46
+custom_styles/panel = SubResource( 17 )
+
+[node name="Label" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+margin_bottom = -34.0
+custom_fonts/font = SubResource( 22 )
+text = "Dubber
+"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer/Panel2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -224.5
+margin_top = -44.0
+margin_right = 233.5
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 23 )
+text = "
+Ema Elvira Ariyanti
+"
+align = 1
+valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="popUpCredit/HBoxContainer"]
+margin_left = 463.0
+margin_right = 920.0
+margin_bottom = 411.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 7
+
+[node name="Panel" type="Panel" parent="popUpCredit/HBoxContainer/VBoxContainer2"]
+margin_right = 457.0
+margin_bottom = 202.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 18 )
+
+[node name="Label" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer2/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 24 )
+text = "Ilustrator
+"
+align = 1
+
+[node name="Label2" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer2/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.5
+margin_top = 12.5
+margin_right = 1.5
+margin_bottom = 12.5
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 13 )
+text = "Elsha Aureal Shopia
+Sandra Sonita"
+align = 1
+valign = 1
+
+[node name="Panel2" type="Panel" parent="popUpCredit/HBoxContainer/VBoxContainer2"]
+margin_top = 209.0
+margin_right = 457.0
+margin_bottom = 411.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 19 )
+
+[node name="Label" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer2/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 25 )
+text = "Sound"
+align = 1
+
+[node name="Label2" type="Label" parent="popUpCredit/HBoxContainer/VBoxContainer2/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 13 )
+text = "Nugraha Agung Pratama"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="popUpCredit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+
+[connection signal="pressed" from="TopButtton/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TopButtton/TextureButton3" to="." method="_on_TextureButton3_pressed"]
+[connection signal="pressed" from="PopupScoreGame/Button/HBoxContainer/keluar" to="." method="_on_keluar_pressed"]
+[connection signal="pressed" from="PopupScoreGame/Button/HBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Quit/VBoxContainer/HBoxContainer/Panel/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Quit/VBoxContainer/HBoxContainer/Panel2/batal" to="." method="_on_batal_pressed"]
+[connection signal="pressed" from="popUpCredit/Button" to="." method="_on_Button_pressed"]

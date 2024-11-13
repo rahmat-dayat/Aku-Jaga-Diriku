@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tring.mp3-561f033b3898cbb58beda39344144e9c.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/tring.mp3"
+dest_files=[ "res://.import/tring.mp3-561f033b3898cbb58beda39344144e9c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

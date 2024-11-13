@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hebat_2C_20Kamu_20yang_20Terbaik.mp3-85c428548856673feec38721a4c3183a.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/Hebat_2C_20Kamu_20yang_20Terbaik.mp3"
+dest_files=[ "res://.import/Hebat_2C_20Kamu_20yang_20Terbaik.mp3-85c428548856673feec38721a4c3183a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

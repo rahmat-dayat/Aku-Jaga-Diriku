@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pasanglah_20Anggota_20Tubuh_20yang_20Ada_20Sesuai_20Dengan_20Posisinya.mp3-7a437fa2ad62b7f16fed453b61f75b34.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Pasanglah_20Anggota_20Tubuh_20yang_20Ada_20Sesuai_20Dengan_20Posisinya.mp3"
+dest_files=[ "res://.import/Pasanglah_20Anggota_20Tubuh_20yang_20Ada_20Sesuai_20Dengan_20Posisinya.mp3-7a437fa2ad62b7f16fed453b61f75b34.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

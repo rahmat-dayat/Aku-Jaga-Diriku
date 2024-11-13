@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scene/GAme/BodyPuzze/piece/piece.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/Body Puzzle/boy/Rambut.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Body Puzzle/audio/Rambut.mp3" type="AudioStream" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 118.0
+height = 278.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 46.0
+height = 98.0
+
+[node name="rambut" instance=ExtResource( 1 )]
+value = "rambut"
+suara = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2( 0.663333, 0.59 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = false
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="Area2D" parent="." index="3"]
+visible = false
+collision_mask = 0
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+visible = false
+rotation = 1.5708
+shape = SubResource( 2 )

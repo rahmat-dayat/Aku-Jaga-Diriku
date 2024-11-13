@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scene/GAme/BodyPuzze/piece/piece.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/Body Puzzle/boy/Mulut _ Hidung.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Body Puzzle/audio/mulut dan hidung_2.mp3" type="AudioStream" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 162.444
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 57, 16 )
+
+[node name="mulut" instance=ExtResource( 1 )]
+value = "mulut"
+suara = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource( 1 )
+
+[node name="Area2D" parent="." index="3"]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2( 3, 3 )
+shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" parent="." index="4"]
+volume_db = 10.0

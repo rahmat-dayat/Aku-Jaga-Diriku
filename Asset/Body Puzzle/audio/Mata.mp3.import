@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mata.mp3-4f6c6333c3c3240e73b0510f42f8bf5e.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Mata.mp3"
+dest_files=[ "res://.import/Mata.mp3-4f6c6333c3c3240e73b0510f42f8bf5e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

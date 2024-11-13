@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Keringkan_20Tangan_20Menggunakan_20Tisu.mp3-cc71f6059bc2138bf026ec0a5705efc2.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/Keringkan_20Tangan_20Menggunakan_20Tisu.mp3"
+dest_files=[ "res://.import/Keringkan_20Tangan_20Menggunakan_20Tisu.mp3-cc71f6059bc2138bf026ec0a5705efc2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

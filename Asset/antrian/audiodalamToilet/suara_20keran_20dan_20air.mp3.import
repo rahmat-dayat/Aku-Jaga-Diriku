@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/suara_20keran_20dan_20air.mp3-c9bc001ef257672526455065b4c3931f.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/suara_20keran_20dan_20air.mp3"
+dest_files=[ "res://.import/suara_20keran_20dan_20air.mp3-c9bc001ef257672526455065b4c3931f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

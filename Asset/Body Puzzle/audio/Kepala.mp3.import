@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kepala.mp3-bb09187566d1a10a2a5f5f9d224889b5.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Kepala.mp3"
+dest_files=[ "res://.import/Kepala.mp3-bb09187566d1a10a2a5f5f9d224889b5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

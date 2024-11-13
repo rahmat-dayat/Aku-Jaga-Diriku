@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hebat.mp3-28a361a63ddd5a7cfa63c11f28a195dd.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Hebat.mp3"
+dest_files=[ "res://.import/Hebat.mp3-28a361a63ddd5a7cfa63c11f28a195dd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

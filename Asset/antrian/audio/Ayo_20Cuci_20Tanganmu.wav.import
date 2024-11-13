@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ayo_20Cuci_20Tanganmu.wav-0bd03d2a19446e6038476862f47096bd.sample"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/Ayo_20Cuci_20Tanganmu.wav"
+dest_files=[ "res://.import/Ayo_20Cuci_20Tanganmu.wav-0bd03d2a19446e6038476862f47096bd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

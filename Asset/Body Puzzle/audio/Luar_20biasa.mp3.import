@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Luar_20biasa.mp3-fbb058e20428933d5c180a9bca847379.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Luar_20biasa.mp3"
+dest_files=[ "res://.import/Luar_20biasa.mp3-fbb058e20428933d5c180a9bca847379.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/animasi/scene6/Latar Scene 6 Animasi.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene-6-bocil-ribut.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Scene/animasi/scene6/Karakter Scene 6.1.png" type="Texture" id=4]
+[ext_resource path="res://Scene/animasi/scene6/scene6.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "next"
+} ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../narasi")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../narasi:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.8, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -5.0, -20.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../narasi:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 10.0 ]
+}
+
+[node name="scene6" instance=ExtResource( 1 )]
+script = ExtResource( 5 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="narasi" parent="." index="2"]
+stream = ExtResource( 3 )
+volume_db = 10.0
+
+[node name="ceritaGui" parent="." index="3"]
+back_scene = "res://Scene/animasi/scene5/scene5.tscn"
+next_scene = "res://Scene/animasi/scene7_8/scene7.tscn"
+
+[node name="Sprite" type="Sprite" parent="." index="4"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 651, 470 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
+root_node = NodePath("../Tween")
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 1 )
+anims/RESET = SubResource( 2 )

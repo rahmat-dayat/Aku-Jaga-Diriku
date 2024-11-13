@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kaki (1).mp3-27a97ed16358c42a194c9d382ed05cff.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Kaki (1).mp3"
+dest_files=[ "res://.import/Kaki (1).mp3-27a97ed16358c42a194c9d382ed05cff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

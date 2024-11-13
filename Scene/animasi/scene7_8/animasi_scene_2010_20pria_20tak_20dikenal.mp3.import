@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/animasi_scene_2010_20pria_20tak_20dikenal.mp3-fd3b2cbb1653871dacbaddef1321c62b.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene7_8/animasi_scene_2010_20pria_20tak_20dikenal.mp3"
+dest_files=[ "res://.import/animasi_scene_2010_20pria_20tak_20dikenal.mp3-fd3b2cbb1653871dacbaddef1321c62b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

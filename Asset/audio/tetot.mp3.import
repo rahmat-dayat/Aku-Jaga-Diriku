@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tetot.mp3-f4fb4038ac8e344b9de2d6d895f1ede1.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/tetot.mp3"
+dest_files=[ "res://.import/tetot.mp3-f4fb4038ac8e344b9de2d6d895f1ede1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

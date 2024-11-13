@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Membuang_20Sampah_20ke_20Tempat_20Sampah.mp3-025d3a750b2736b07f4c2aa457695aa0.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/Membuang_20Sampah_20ke_20Tempat_20Sampah.mp3"
+dest_files=[ "res://.import/Membuang_20Sampah_20ke_20Tempat_20Sampah.mp3-025d3a750b2736b07f4c2aa457695aa0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

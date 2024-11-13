@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bermain_20Menyusun_20Huruf.mp3-f501135e6333a8476d908b32dc9a2ee5.mp3str"
+
+[deps]
+
+source_file="res://Asset/BoysGirls/makingWord/audio/Bermain_20Menyusun_20Huruf.mp3"
+dest_files=[ "res://.import/Bermain_20Menyusun_20Huruf.mp3-f501135e6333a8476d908b32dc9a2ee5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

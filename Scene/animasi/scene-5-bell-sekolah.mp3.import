@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/scene-5-bell-sekolah.mp3-156461ae4d98220f098a253f8453eb2f.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene-5-bell-sekolah.mp3"
+dest_files=[ "res://.import/scene-5-bell-sekolah.mp3-156461ae4d98220f098a253f8453eb2f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

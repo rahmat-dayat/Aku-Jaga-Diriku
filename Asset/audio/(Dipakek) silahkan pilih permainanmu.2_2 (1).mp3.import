@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/(Dipakek) silahkan pilih permainanmu.2_2 (1).mp3-56e7fb6f460c6c875db5b43882d330a3.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/(Dipakek) silahkan pilih permainanmu.2_2 (1).mp3"
+dest_files=[ "res://.import/(Dipakek) silahkan pilih permainanmu.2_2 (1).mp3-56e7fb6f460c6c875db5b43882d330a3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

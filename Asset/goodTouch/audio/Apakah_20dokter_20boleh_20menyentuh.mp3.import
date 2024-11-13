@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Apakah_20dokter_20boleh_20menyentuh.mp3-55e0b2028f22cdd9c4179ba6ca9958bb.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Apakah_20dokter_20boleh_20menyentuh.mp3"
+dest_files=[ "res://.import/Apakah_20dokter_20boleh_20menyentuh.mp3-55e0b2028f22cdd9c4179ba6ca9958bb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,525 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Scene/Main/GUI.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Asset/Quicksand/MoreSugar-Thin.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scene/GAme/BoysGirls/BoysGirls.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Asset/antrian/Untitled214_20220831222611.png" type="Texture" id=4]
+[ext_resource path="res://Asset/antrian/Cara Bermain BG.png" type="Texture" id=5]
+[ext_resource path="res://Scene/GAme/antrian/antrianToilet.gd" type="Script" id=6]
+[ext_resource path="res://Asset/antrian/Toilet Wanita.png" type="Texture" id=7]
+[ext_resource path="res://Asset/antrian/audio/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.wav" type="AudioStream" id=8]
+[ext_resource path="res://Asset/antrian/audio/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Laki-laki.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Asset/antrian/Toilet Laki-laki.png" type="Texture" id=10]
+[ext_resource path="res://Asset/antrian/audio/Bermain_20Antrian_20Toilet.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Asset/antrian/Toilet Depan.png" type="Texture" id=12]
+[ext_resource path="res://Scene/GAme/antrian/Karakter.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Asset/antrian/3.png" type="Texture" id=14]
+[ext_resource path="res://Asset/antrian/5.png" type="Texture" id=15]
+[ext_resource path="res://Asset/antrian/2.png" type="Texture" id=16]
+[ext_resource path="res://Asset/antrian/4.png" type="Texture" id=17]
+[ext_resource path="res://Scene/GAme/antrian/game.gd" type="Script" id=18]
+[ext_resource path="res://Asset/antrian/audio/suara_20pintu.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Asset/antrian/audiodalamToilet/4.png" type="Texture" id=20]
+[ext_resource path="res://Asset/antrian/audiodalamToilet/6.png" type="Texture" id=21]
+[ext_resource path="res://Asset/antrian/audiodalamToilet/2.png" type="Texture" id=22]
+[ext_resource path="res://Asset/antrian/audiodalamToilet/5.png" type="Texture" id=23]
+
+[sub_resource type="DynamicFont" id=8]
+size = 43
+font_data = ExtResource( 2 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 75, 160.5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 64, 152.5 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.921569, 0.921569, 0.921569, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.682353, 0.588235, 0.588235, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=12]
+size = 26
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=16]
+resource_name = "girlNotice"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("lakiNotice2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "lakiNotice"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("lakiNotice:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 18
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "guru"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("start/TextureRect3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -46, 305 ), Vector2( -46, 312 ), Vector2( -46, 305 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("start/TextureRect3:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 500, 500 ), Vector2( 500, 493 ), Vector2( 500, 500 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 13.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("start/TextureRect4:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 2.8, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("start/TextureRect3:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 2.8, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("start/Label:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "audio"
+tracks/3/path = NodePath("penjelasan")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 11 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+} ],
+"times": PoolRealArray( 0, 3.6, 8.5 )
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("start/TextureRect4:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 8.45733 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ), ExtResource( 10 ) ]
+}
+tracks/5/type = "method"
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 2.9, 13.4, 13.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "tring"
+}, {
+"args": [  ],
+"method": "tring"
+}, {
+"args": [  ],
+"method": "penjelasan2"
+} ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("start:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 13.2, 13.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("start:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 13.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "skip"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("start:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("start:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "penjelasan2"
+} ]
+}
+
+[node name="antrianToilet" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="game" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 18 )
+
+[node name="TextureRect" type="TextureRect" parent="game"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="game"]
+modulate = Color( 0.2, 0.188235, 0.188235, 1 )
+margin_left = 185.0
+margin_top = 17.0
+margin_right = 1109.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 8 )
+text = "Pilihlah toilet yang sesuai dengan gender karakter"
+
+[node name="Karakter" type="Node2D" parent="game"]
+
+[node name="girl1" parent="game/Karakter" instance=ExtResource( 13 )]
+position = Vector2( 326, 565 )
+
+[node name="Sprite" parent="game/Karakter/girl1" index="0"]
+texture = ExtResource( 16 )
+
+[node name="boy1" parent="game/Karakter" instance=ExtResource( 13 )]
+position = Vector2( 674, 507 )
+senangAsset = ExtResource( 23 )
+boy = true
+
+[node name="Sprite" parent="game/Karakter/boy1" index="0"]
+texture = ExtResource( 14 )
+
+[node name="boy2" parent="game/Karakter" instance=ExtResource( 13 )]
+position = Vector2( 999, 565 )
+senangAsset = ExtResource( 21 )
+boy = true
+
+[node name="Sprite" parent="game/Karakter/boy2" index="0"]
+texture = ExtResource( 15 )
+
+[node name="girl2" parent="game/Karakter" instance=ExtResource( 13 )]
+position = Vector2( 1188, 461 )
+senangAsset = ExtResource( 22 )
+
+[node name="Sprite" parent="game/Karakter/girl2" index="0"]
+texture = ExtResource( 17 )
+
+[node name="boy3" parent="game/Karakter" instance=ExtResource( 13 )]
+position = Vector2( 87, 452 )
+senangAsset = ExtResource( 20 )
+boy = true
+
+[node name="Node2D" type="Node2D" parent="game"]
+
+[node name="laki" type="Area2D" parent="game/Node2D"]
+position = Vector2( 493, 372 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game/Node2D/laki"]
+position = Vector2( 1, 0.5 )
+shape = SubResource( 9 )
+
+[node name="prempuan" type="Area2D" parent="game/Node2D"]
+position = Vector2( 868, 366 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game/Node2D/prempuan"]
+position = Vector2( -5, -3.5 )
+shape = SubResource( 10 )
+
+[node name="posLaki" type="Position2D" parent="game/Node2D"]
+position = Vector2( 492, 937 )
+
+[node name="posPerempuan" type="Position2D" parent="game/Node2D"]
+position = Vector2( 910, 937 )
+
+[node name="Tween" type="Tween" parent="game"]
+
+[node name="masuk" type="AudioStreamPlayer" parent="game"]
+stream = ExtResource( 19 )
+
+[node name="lakiNotice" type="Panel" parent="game"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 414.0
+margin_top = 278.0
+margin_right = 575.0
+margin_bottom = 397.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="game/lakiNotice"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.258824, 0.243137, 0.243137, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Toilet Sedang
+Digunakan"
+align = 1
+valign = 1
+
+[node name="lakiNotice2" type="Panel" parent="game"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 796.0
+margin_top = 278.0
+margin_right = 957.0
+margin_bottom = 397.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="game/lakiNotice2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.258824, 0.243137, 0.243137, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "Toilet Sedang
+Digunakan"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="game"]
+anims/girlNotice = SubResource( 16 )
+anims/lakiNotice = SubResource( 14 )
+
+[node name="start" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+
+[node name="TextureRect2" type="TextureRect" parent="start"]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect3" type="TextureRect" parent="start"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.0359375
+anchor_top = 0.433333
+anchor_right = 0.167187
+anchor_bottom = 0.790278
+margin_top = -6.99976
+margin_right = 240.001
+margin_bottom = 236.0
+mouse_filter = 2
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect4" type="TextureRect" parent="start"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="start"]
+modulate = Color( 0.239216, 0.219608, 0.219608, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -203.0
+margin_top = -25.5
+margin_right = 203.0
+margin_bottom = 25.5
+custom_fonts/font = SubResource( 4 )
+text = "Bermain Antrian Toilet"
+
+[node name="Button" type="Button" parent="start"]
+modulate = Color( 0.0705882, 0.0666667, 0.0666667, 1 )
+margin_left = 910.0
+margin_top = 461.0
+margin_right = 1095.0
+margin_bottom = 526.0
+custom_fonts/font = SubResource( 7 )
+text = "SKIP>>"
+flat = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource( 1 )]
+backScene = ExtResource( 3 )
+startTimer = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "guru"
+anims/guru = SubResource( 2 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 3 )
+anims/skip = SubResource( 6 )
+
+[node name="penjelasan" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[connection signal="lepas" from="game/Karakter/girl1" to="game" method="_on_girl1_lepas"]
+[connection signal="lepas" from="game/Karakter/boy1" to="game" method="_on_boy1_lepas"]
+[connection signal="lepas" from="game/Karakter/boy2" to="game" method="_on_boy2_lepas"]
+[connection signal="lepas" from="game/Karakter/girl2" to="game" method="_on_girl2_lepas"]
+[connection signal="lepas" from="game/Karakter/boy3" to="game" method="_on_boy3_lepas"]
+[connection signal="area_entered" from="game/Node2D/laki" to="game" method="_on_laki_area_entered"]
+[connection signal="area_exited" from="game/Node2D/laki" to="game" method="_on_laki_area_exited"]
+[connection signal="area_entered" from="game/Node2D/prempuan" to="game" method="_on_prempuan_area_entered"]
+[connection signal="area_exited" from="game/Node2D/prempuan" to="game" method="_on_prempuan_area_exited"]
+[connection signal="pressed" from="start/Button" to="." method="_on_Button_pressed"]
+
+[editable path="game/Karakter/girl1"]
+[editable path="game/Karakter/boy1"]
+[editable path="game/Karakter/boy2"]
+[editable path="game/Karakter/girl2"]

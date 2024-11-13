@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/_5B_20_5D_20Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing_20yang_20mencurigakan_2C_20apa_20yang_20harus_20kita_20lakukan_1.mp3-7241eb817b892bf3e0540f87cabe393b.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/_5B_20_5D_20Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing_20yang_20mencurigakan_2C_20apa_20yang_20harus_20kita_20lakukan_1.mp3"
+dest_files=[ "res://.import/_5B_20_5D_20Jika_20di_20sekolah_20kita_20bertemu_20orang_20asing_20yang_20mencurigakan_2C_20apa_20yang_20harus_20kita_20lakukan_1.mp3-7241eb817b892bf3e0540f87cabe393b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

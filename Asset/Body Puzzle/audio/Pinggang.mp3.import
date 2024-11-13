@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pinggang.mp3-b06409dd26bc32f0214fd9d0359af7cc.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Pinggang.mp3"
+dest_files=[ "res://.import/Pinggang.mp3-b06409dd26bc32f0214fd9d0359af7cc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

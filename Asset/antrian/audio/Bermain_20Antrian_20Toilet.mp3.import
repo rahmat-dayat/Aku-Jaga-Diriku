@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bermain_20Antrian_20Toilet.mp3-318c45ad3ae3dd0de484d09c6deadc53.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/Bermain_20Antrian_20Toilet.mp3"
+dest_files=[ "res://.import/Bermain_20Antrian_20Toilet.mp3-318c45ad3ae3dd0de484d09c6deadc53.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

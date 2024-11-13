@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ayo_20Cuci_20Tanganmu.mp3-5c9060ee31c302255bd1119f41856cc0.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audiodalamToilet/Ayo_20Cuci_20Tanganmu.mp3"
+dest_files=[ "res://.import/Ayo_20Cuci_20Tanganmu.mp3-5c9060ee31c302255bd1119f41856cc0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

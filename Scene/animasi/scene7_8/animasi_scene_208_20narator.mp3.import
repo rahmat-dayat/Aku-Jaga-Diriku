@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/animasi_scene_208_20narator.mp3-2f313c3ac77630e081ecd2a1b6d47511.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene7_8/animasi_scene_208_20narator.mp3"
+dest_files=[ "res://.import/animasi_scene_208_20narator.mp3-2f313c3ac77630e081ecd2a1b6d47511.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

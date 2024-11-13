@@ -1,0 +1,301 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Asset/Home/Latar Game Basic.png" type="Texture" id=1]
+[ext_resource path="res://Asset/dressUP/Aku Jaga Diriku-8.png" type="Texture" id=2]
+[ext_resource path="res://Asset/dressUP/boys/Laki-laki Dress Up.png" type="Texture" id=3]
+[ext_resource path="res://Asset/dressUP/boys/kemeja lengan pendek3x.png" type="Texture" id=4]
+[ext_resource path="res://Asset/dressUP/girl/rok panjang3x.png" type="Texture" id=5]
+[ext_resource path="res://Scene/GAme/BoysGirls/DressUp/Pakaian.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Asset/dressUP/boys/kaos berkerah3x.png" type="Texture" id=7]
+[ext_resource path="res://Scene/GAme/BoysGirls/DressUp/DressUp.gd" type="Script" id=8]
+[ext_resource path="res://Asset/dressUP/boys/celana pendek 13x.png" type="Texture" id=9]
+[ext_resource path="res://Asset/dressUP/boys/celana pendek 23x.png" type="Texture" id=10]
+[ext_resource path="res://Asset/dressUP/girl/gaun pendek 23x.png" type="Texture" id=11]
+[ext_resource path="res://Asset/dressUP/girl/gaun panjang3x.png" type="Texture" id=12]
+[ext_resource path="res://Asset/dressUP/girl/rok pendek3x.png" type="Texture" id=13]
+[ext_resource path="res://Asset/dressUP/boys/kaos3x.png" type="Texture" id=14]
+[ext_resource path="res://Asset/dressUP/boys/kaos_13x.png" type="Texture" id=15]
+[ext_resource path="res://Asset/dressUP/girl/baju lengan pendek 23x.png" type="Texture" id=16]
+[ext_resource path="res://Scene/effect.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Asset/BoysGirls/makingWord/Submit Button.png" type="Texture" id=18]
+[ext_resource path="res://Scene/GAme/BoysGirls/MakingWord/makingWord1.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scene/GAme/BoysGirls/BoysGirls.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scene/Main/GUI.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Asset/dressUP/Level_20Bonus_2C_20Bermain_20Mencocokkan_20Baju_20Sesuai_20Gender.mp3" type="AudioStream" id=22]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 25, 33 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 19.25, 24.5 )
+
+[node name="DressUp" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+
+[node name="background" type="TextureRect" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="Control"]
+margin_left = 176.0
+margin_top = 184.0
+margin_right = 526.0
+margin_bottom = 534.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+
+[node name="karakter" type="TextureRect" parent="Control/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+
+[node name="celana" type="TextureRect" parent="Control/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 132.0
+margin_top = 235.0
+margin_right = -149.0
+margin_bottom = -56.0
+mouse_filter = 2
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="baju" type="TextureRect" parent="Control/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 116.0
+margin_top = 153.0
+margin_right = -137.0
+margin_bottom = -108.0
+mouse_filter = 2
+expand = true
+
+[node name="gaun" type="TextureRect" parent="Control/Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 128.0
+margin_top = 142.0
+margin_right = -119.0
+margin_bottom = -41.0
+mouse_filter = 2
+texture = ExtResource( 12 )
+expand = true
+
+[node name="submit" type="TextureButton" parent="Control"]
+margin_left = 274.0
+margin_top = 556.0
+margin_right = 416.0
+margin_bottom = 652.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 18 )
+expand = true
+stretch_mode = 6
+
+[node name="object" type="Node2D" parent="."]
+
+[node name="baju1" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 632, 280 )
+collision_layer = 1
+value = "baju1"
+pakaianNow = ExtResource( 14 )
+pakaianBoys = ExtResource( 14 )
+pakaianGirl = ExtResource( 16 )
+
+[node name="baju2" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 784, 280 )
+collision_layer = 1
+value = "baju1"
+pakaianNow = ExtResource( 4 )
+pakaianBoys = ExtResource( 15 )
+pakaianGirl = ExtResource( 14 )
+boy = true
+
+[node name="Sprite" parent="object/baju2" index="0"]
+texture = ExtResource( 4 )
+
+[node name="baju3" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 944, 280 )
+collision_layer = 1
+value = "baju1"
+pakaianNow = ExtResource( 7 )
+pakaianBoys = ExtResource( 7 )
+pakaianGirl = ExtResource( 4 )
+boy = true
+
+[node name="Sprite" parent="object/baju3" index="0"]
+texture = ExtResource( 7 )
+
+[node name="baju4" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 1088, 280 )
+collision_layer = 2
+value = "baju1"
+pakaianNow = ExtResource( 9 )
+pakaianBoys = ExtResource( 9 )
+pakaianGirl = ExtResource( 13 )
+boy = true
+
+[node name="Sprite" parent="object/baju4" index="0"]
+texture = ExtResource( 9 )
+
+[node name="baju5" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 624, 432 )
+collision_layer = 2
+value = "baju1"
+pakaianNow = ExtResource( 10 )
+pakaianBoys = ExtResource( 10 )
+pakaianGirl = ExtResource( 5 )
+boy = true
+
+[node name="Sprite" parent="object/baju5" index="0"]
+texture = ExtResource( 10 )
+
+[node name="baju6" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 784, 440 )
+collision_layer = 1
+value = "baju1"
+pakaianNow = ExtResource( 11 )
+pakaianBoys = ExtResource( 11 )
+pakaianGirl = ExtResource( 11 )
+
+[node name="Sprite" parent="object/baju6" index="0"]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
+
+[node name="baju7" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 952, 432 )
+collision_layer = 1
+value = "baju1"
+pakaianNow = ExtResource( 12 )
+pakaianBoys = ExtResource( 12 )
+pakaianGirl = ExtResource( 12 )
+
+[node name="Sprite" parent="object/baju7" index="0"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 12 )
+
+[node name="baju8" parent="object" instance=ExtResource( 6 )]
+position = Vector2( 1088, 432 )
+collision_layer = 2
+value = "baju1"
+pakaianNow = ExtResource( 13 )
+pakaianBoys = ExtResource( 9 )
+pakaianGirl = ExtResource( 13 )
+
+[node name="Sprite" parent="object/baju8" index="0"]
+texture = ExtResource( 13 )
+
+[node name="position" type="Node2D" parent="."]
+
+[node name="Position2D" type="Position2D" parent="position"]
+position = Vector2( 632, 280 )
+
+[node name="Position2D2" type="Position2D" parent="position"]
+position = Vector2( 784, 280 )
+
+[node name="Position2D3" type="Position2D" parent="position"]
+position = Vector2( 944, 280 )
+
+[node name="Position2D4" type="Position2D" parent="position"]
+position = Vector2( 1088, 280 )
+
+[node name="Position2D5" type="Position2D" parent="position"]
+position = Vector2( 624, 432 )
+
+[node name="Position2D6" type="Position2D" parent="position"]
+position = Vector2( 784, 440 )
+
+[node name="Position2D7" type="Position2D" parent="position"]
+position = Vector2( 952, 440 )
+
+[node name="Position2D8" type="Position2D" parent="position"]
+position = Vector2( 1103, 432 )
+
+[node name="baju" type="Area2D" parent="."]
+position = Vector2( 346, 382 )
+collision_layer = 0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baju"]
+shape = SubResource( 2 )
+
+[node name="celana" type="Area2D" parent="."]
+position = Vector2( 347, 454 )
+collision_layer = 0
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="celana"]
+position = Vector2( -2.75, 0 )
+shape = SubResource( 3 )
+
+[node name="effect" parent="." instance=ExtResource( 17 )]
+position = Vector2( 344, 381 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource( 21 )]
+backScene = ExtResource( 20 )
+gameScene = ExtResource( 19 )
+
+[node name="narasi" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+
+[connection signal="pressed" from="Control/submit" to="." method="_on_submit_pressed"]
+[connection signal="lepas" from="object/baju1" to="." method="_on_baju1_lepas"]
+[connection signal="lepas" from="object/baju2" to="." method="_on_baju2_lepas"]
+[connection signal="lepas" from="object/baju3" to="." method="_on_baju3_lepas"]
+[connection signal="lepas" from="object/baju4" to="." method="_on_baju4_lepas"]
+[connection signal="lepas" from="object/baju5" to="." method="_on_baju5_lepas"]
+[connection signal="lepas" from="object/baju6" to="." method="_on_baju6_lepas"]
+[connection signal="lepas" from="object/baju7" to="." method="_on_baju7_lepas"]
+[connection signal="lepas" from="object/baju8" to="." method="_on_baju8_lepas"]
+[connection signal="area_entered" from="baju" to="." method="_on_baju_area_entered"]
+[connection signal="area_exited" from="baju" to="." method="_on_baju_area_exited"]
+[connection signal="area_entered" from="celana" to="." method="_on_celana_area_entered"]
+[connection signal="area_exited" from="celana" to="." method="_on_celana_area_exited"]
+
+[editable path="object/baju1"]
+[editable path="object/baju2"]
+[editable path="object/baju3"]
+[editable path="object/baju4"]
+[editable path="object/baju5"]
+[editable path="object/baju6"]
+[editable path="object/baju7"]
+[editable path="object/baju8"]

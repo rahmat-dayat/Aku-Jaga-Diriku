@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jadi_2C_20Bagian-bagian_20Itu_20Tidak_20Boleh.mp3-66529d7e3daa333c71db2300cfc380ef.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Jadi_2C_20Bagian-bagian_20Itu_20Tidak_20Boleh.mp3"
+dest_files=[ "res://.import/Jadi_2C_20Bagian-bagian_20Itu_20Tidak_20Boleh.mp3-66529d7e3daa333c71db2300cfc380ef.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

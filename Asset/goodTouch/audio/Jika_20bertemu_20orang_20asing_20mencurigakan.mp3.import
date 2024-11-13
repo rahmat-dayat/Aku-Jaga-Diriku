@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jika_20bertemu_20orang_20asing_20mencurigakan.mp3-565f7cc0104d77986fcec8863bb13603.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Jika_20bertemu_20orang_20asing_20mencurigakan.mp3"
+dest_files=[ "res://.import/Jika_20bertemu_20orang_20asing_20mencurigakan.mp3-565f7cc0104d77986fcec8863bb13603.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

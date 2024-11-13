@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Wah_2C_20Pilihan_20mu_20Bagus_20Sekali_2C_20Saya_20Suka_2C_20Terima_20Kasih.mp3-c300b5f1f9c2bef5ac3231590aaa68a5.mp3str"
+
+[deps]
+
+source_file="res://Asset/dressUP/Wah_2C_20Pilihan_20mu_20Bagus_20Sekali_2C_20Saya_20Suka_2C_20Terima_20Kasih.mp3"
+dest_files=[ "res://.import/Wah_2C_20Pilihan_20mu_20Bagus_20Sekali_2C_20Saya_20Suka_2C_20Terima_20Kasih.mp3-c300b5f1f9c2bef5ac3231590aaa68a5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

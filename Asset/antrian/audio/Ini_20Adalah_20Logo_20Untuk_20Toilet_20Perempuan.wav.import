@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.wav-35d3a162b658668621f44ca356087ae0.sample"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.wav"
+dest_files=[ "res://.import/Ini_20Adalah_20Logo_20Untuk_20Toilet_20Perempuan.wav-35d3a162b658668621f44ca356087ae0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

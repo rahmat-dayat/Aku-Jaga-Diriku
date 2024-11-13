@@ -1,0 +1,267 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Asset/Game Menu/Boys _ Girls Button.png" type="Texture" id=1]
+[ext_resource path="res://Asset/Game Menu/Good Touch _ Bad Touch Button.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Game Menu/Tulisan 6.png" type="Texture" id=3]
+[ext_resource path="res://Asset/Game Menu/Body Puzzle Button.png" type="Texture" id=4]
+[ext_resource path="res://Asset/Home/Latar Game Basic.png" type="Texture" id=5]
+[ext_resource path="res://Scene/Main/MainMenu.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Scene/Main/GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scene/Main/MainMenu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scene/Main/gameMenu.gd" type="Script" id=9]
+[ext_resource path="res://Asset/audio/Mau_20Main_20Apa_20Hari_20Ini.mp3" type="AudioStream" id=10]
+
+[sub_resource type="StyleBoxFlat" id=3]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.807843, 0.847059, 1, 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "New Anim"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="gameMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 3 )
+
+[node name="CenterContainer" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -551.0
+margin_top = -149.5
+margin_right = 551.0
+margin_bottom = 149.5
+custom_styles/panel = SubResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 1.0
+rect_min_size = Vector2( 800, 300 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 102.0
+margin_top = 309.5
+margin_right = 292.0
+margin_bottom = 358.5
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+text = "Body Puzzle"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="CenterContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 443.0
+margin_top = 320.5
+margin_right = 675.0
+margin_bottom = 360.5
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/Panel2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+text = "Boys & Girls "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="CenterContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 806.0
+margin_top = 320.5
+margin_right = 1054.0
+margin_bottom = 376.5
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/Panel3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+text = "Good Touch 
+& Bad Touch"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bodyPuzzle" type="TextureButton" parent="CenterContainer"]
+margin_left = 23.0
+margin_top = 5.5
+margin_right = 387.0
+margin_bottom = 305.5
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 182, 150 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+disabled = true
+texture_normal = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="by&girl" type="TextureButton" parent="CenterContainer"]
+margin_left = 368.0
+margin_right = 733.0
+margin_bottom = 300.0
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 182, 150 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+disabled = true
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="goodTouch" type="TextureButton" parent="CenterContainer"]
+margin_left = 737.0
+margin_right = 1102.0
+margin_bottom = 300.0
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 182, 150 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+disabled = true
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="GUI" parent="." instance=ExtResource( 7 )]
+backScene = ExtResource( 8 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/New Anim" = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[connection signal="pressed" from="CenterContainer/bodyPuzzle" to="." method="_on_bodyPuzzle_pressed"]
+[connection signal="pressed" from="CenterContainer/by&girl" to="." method="_on_bygirl_pressed"]
+[connection signal="pressed" from="CenterContainer/goodTouch" to="." method="_on_goodTouch_pressed"]
+
+[editable path="GUI"]

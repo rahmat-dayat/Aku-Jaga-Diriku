@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jangan_20Menyerah_2C_20Kamu_20Pasti_20Bisa.mp3-de98d62604a182dceb69614bda821cb5.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/Jangan_20Menyerah_2C_20Kamu_20Pasti_20Bisa.mp3"
+dest_files=[ "res://.import/Jangan_20Menyerah_2C_20Kamu_20Pasti_20Bisa.mp3-de98d62604a182dceb69614bda821cb5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

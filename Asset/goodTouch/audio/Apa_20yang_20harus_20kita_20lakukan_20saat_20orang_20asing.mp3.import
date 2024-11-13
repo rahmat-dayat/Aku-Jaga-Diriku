@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Apa_20yang_20harus_20kita_20lakukan_20saat_20orang_20asing.mp3-a7ae8cf28ae85e3f8b0468da6f8cf942.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Apa_20yang_20harus_20kita_20lakukan_20saat_20orang_20asing.mp3"
+dest_files=[ "res://.import/Apa_20yang_20harus_20kita_20lakukan_20saat_20orang_20asing.mp3-a7ae8cf28ae85e3f8b0468da6f8cf942.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

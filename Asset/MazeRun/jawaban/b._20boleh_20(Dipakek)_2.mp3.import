@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/b._20boleh_20(Dipakek)_2.mp3-92b8b5129ba699c2c8e8d682283cdf3f.mp3str"
+
+[deps]
+
+source_file="res://Asset/MazeRun/jawaban/b._20boleh_20(Dipakek)_2.mp3"
+dest_files=[ "res://.import/b._20boleh_20(Dipakek)_2.mp3-92b8b5129ba699c2c8e8d682283cdf3f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

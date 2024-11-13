@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pilih_20Busana_20yang_20Sesuai_20Dengan_20Laki-laki_20Atau_20Perempuan.mp3-8e3740b52b808cc31a7ecdb29bf6434f.mp3str"
+
+[deps]
+
+source_file="res://Asset/dressUP/Pilih_20Busana_20yang_20Sesuai_20Dengan_20Laki-laki_20Atau_20Perempuan.mp3"
+dest_files=[ "res://.import/Pilih_20Busana_20yang_20Sesuai_20Dengan_20Laki-laki_20Atau_20Perempuan.mp3-8e3740b52b808cc31a7ecdb29bf6434f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

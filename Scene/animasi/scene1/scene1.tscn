@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/animasi/scene1/Latar Scene 1 Animasi.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene1/Karakter Scene 1.png" type="Texture" id=3]
+[ext_resource path="res://Scene/animasi/scene1/scne1.gd" type="Script" id=4]
+[ext_resource path="res://Scene/animasi/scene1/animasi_scene_201_20narator.mp3" type="AudioStream" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 472, 493 ), Vector2( 472, 498.5 ), Vector2( 472, 493 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 0.9725 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "New Anim"
+length = 4.0
+tracks/0/type = "audio"
+tracks/0/path = NodePath("narasi")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 5 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 3.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_on_narasi_finished"
+} ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+
+[node name="scene1" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="." index="2"]
+position = Vector2( 472, 493 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 376, 277, 212, 400 )
+
+[node name="narasi" parent="." index="3"]
+stream = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="4"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 1 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="5"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[node name="ceritaGui" parent="." index="6"]
+next_scene = "res://Scene/animasi/scene2/scene2.tscn"
+
+[node name="TextureRect" parent="ceritaGui" index="0"]
+visible = false
+disabled = true
+
+[connection signal="finished" from="narasi" to="." method="_on_narasi_finished"]
+
+[editable path="ceritaGui"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Badan.mp3-dc20b9185f60915d5d0b2f5b532ef8fa.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Badan.mp3"
+dest_files=[ "res://.import/Badan.mp3-dc20b9185f60915d5d0b2f5b532ef8fa.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

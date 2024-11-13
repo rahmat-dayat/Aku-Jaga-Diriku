@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Letakkan_20Tanda_20Centang_20di_20Bagian_20yang_20Boleh_20Disentuh.mp3-ca32501905138a73d19a7e71c83291e7.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Letakkan_20Tanda_20Centang_20di_20Bagian_20yang_20Boleh_20Disentuh.mp3"
+dest_files=[ "res://.import/Letakkan_20Tanda_20Centang_20di_20Bagian_20yang_20Boleh_20Disentuh.mp3-ca32501905138a73d19a7e71c83291e7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

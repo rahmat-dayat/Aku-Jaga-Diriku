@@ -1,0 +1,241 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Asset/Quicksand/static/Quicksand-Light.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Asset/Home/Pop Up Polos.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Home/Bintang Putih.png" type="Texture" id=3]
+[ext_resource path="res://Asset/Main Menu/Keluar Button.png" type="Texture" id=4]
+[ext_resource path="res://Asset/Home/Bintang Pink.png" type="Texture" id=5]
+[ext_resource path="res://Asset/Main Menu/Ulangi Button.png" type="Texture" id=6]
+[ext_resource path="res://Asset/Home/Lanjut Button.png" type="Texture" id=7]
+[ext_resource path="res://Scene/Main/PopupScoreGame.gd" type="Script" id=8]
+
+[sub_resource type="StyleBoxFlat" id=2]
+draw_center = false
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=5]
+draw_center = false
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+outline_size = 1
+outline_color = Color( 1, 1, 1, 0.654902 )
+font_data = ExtResource( 1 )
+
+[node name="PopupScoreGame" type="Panel"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 2 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureRect2"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 492.0
+margin_top = 123.0
+margin_right = 796.0
+margin_bottom = 226.0
+custom_fonts/font = SubResource( 3 )
+text = "Game Selesai"
+align = 1
+valign = 1
+
+[node name="star" type="Panel" parent="."]
+margin_left = 474.0
+margin_top = 278.0
+margin_right = 810.0
+margin_bottom = 372.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="emptystar" type="HBoxContainer" parent="star"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="star/emptystar"]
+margin_right = 64.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="star/emptystar"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="star/emptystar"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="star/emptystar"]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="TextureRect5" type="TextureRect" parent="star/emptystar"]
+margin_left = 272.0
+margin_right = 336.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="star1" type="TextureRect" parent="star"]
+margin_right = 64.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="star2" type="TextureRect" parent="star"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="star3" type="TextureRect" parent="star"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="star4" type="TextureRect" parent="star"]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="star5" type="TextureRect" parent="star"]
+margin_left = 272.0
+margin_right = 336.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="kalimat" type="Panel" parent="."]
+margin_left = 326.0
+margin_top = 368.0
+margin_right = 967.0
+margin_bottom = 461.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="kalimat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 6 )
+text = "Selamat, kamu sungguh luar biasa !!"
+align = 1
+valign = 1
+
+[node name="Button" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = 112.0
+margin_right = 192.0
+margin_bottom = 205.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureButton" type="TextureButton" parent="Button/HBoxContainer"]
+margin_right = 122.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="Button/HBoxContainer"]
+margin_left = 126.0
+margin_right = 249.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="Button/HBoxContainer"]
+margin_left = 253.0
+margin_right = 376.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 7 )
+expand = true
+stretch_mode = 6

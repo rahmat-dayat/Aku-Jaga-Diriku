@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Susunlah_20Huruf_20di_20Bawah_20Ini_20Menjadi_20Kata_20yang_20Benar.mp3-d3cf841b23fd5ba694663c41c6b81754.mp3str"
+
+[deps]
+
+source_file="res://Asset/BoysGirls/makingWord/audio/Susunlah_20Huruf_20di_20Bawah_20Ini_20Menjadi_20Kata_20yang_20Benar.mp3"
+dest_files=[ "res://.import/Susunlah_20Huruf_20di_20Bawah_20Ini_20Menjadi_20Kata_20yang_20Benar.mp3-d3cf841b23fd5ba694663c41c6b81754.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

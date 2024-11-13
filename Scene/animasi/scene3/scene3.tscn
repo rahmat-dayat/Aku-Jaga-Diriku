@@ -1,0 +1,219 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scene/animasi/animasi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/animasi/scene3/Karakter Scene 3.2.png" type="Texture" id=2]
+[ext_resource path="res://Scene/animasi/scene3/Karakter Scene 3.3.png" type="Texture" id=3]
+[ext_resource path="res://Scene/animasi/scene2/Karakter Scene 2.png" type="Texture" id=4]
+[ext_resource path="res://Scene/animasi/scene2/Latar Scene 2 Animasi.png" type="Texture" id=5]
+[ext_resource path="res://Scene/animasi/scene3/animasi_scene_203_20narator.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Scene/animasi/scene3/scene_3.gd" type="Script" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 520, 568 ), Vector2( 520, 573.225 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ), Vector2( 0.7, 0.668043 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ), Vector2( 0.7, 0.686972 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 415, 601.775 ), Vector2( 415, 603.163 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 520, 568 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.7, 0.7 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 415, 598 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 7.5
+tracks/0/type = "audio"
+tracks/0/path = NodePath("../narasi")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 6 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 7.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_on_narasi_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../narasi:stream_paused")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 6.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../narasi:stream_paused")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[node name="scene3" instance=ExtResource( 1 )]
+script = ExtResource( 7 )
+
+[node name="background" parent="." index="0"]
+texture = ExtResource( 5 )
+
+[node name="narasi" parent="." index="2"]
+stream = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
+root_node = NodePath("../Sprite2")
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="4"]
+root_node = NodePath("../Sprite2")
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="." index="5"]
+position = Vector2( 520, 568 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 506, 379, 112, 327 )
+
+[node name="Sprite2" type="Sprite" parent="." index="6"]
+position = Vector2( 415, 598 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 396, 478, 108, 213 )
+
+[node name="Sprite3" type="Sprite" parent="." index="7"]
+position = Vector2( 797, 609 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 644, 466, 429, 248 )
+
+[node name="ceritaGui" parent="." index="8"]
+back_scene = "res://Scene/animasi/scene2/scene2.tscn"
+next_scene = "res://Scene/animasi/scene4/scene4.tscn"
+
+[connection signal="finished" from="narasi" to="." method="_on_narasi_finished"]

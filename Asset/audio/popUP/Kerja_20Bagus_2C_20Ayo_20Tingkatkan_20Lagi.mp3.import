@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kerja_20Bagus_2C_20Ayo_20Tingkatkan_20Lagi.mp3-36c2f985f09fd56f68f02146a1d8218d.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/Kerja_20Bagus_2C_20Ayo_20Tingkatkan_20Lagi.mp3"
+dest_files=[ "res://.import/Kerja_20Bagus_2C_20Ayo_20Tingkatkan_20Lagi.mp3-36c2f985f09fd56f68f02146a1d8218d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

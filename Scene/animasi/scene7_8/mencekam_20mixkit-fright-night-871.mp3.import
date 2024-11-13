@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mencekam%20mixkit-fright-night-871.mp3-22c3d121668a0d8305320a2f2955a7a3.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene7_8/mencekam%20mixkit-fright-night-871.mp3"
+dest_files=[ "res://.import/mencekam%20mixkit-fright-night-871.mp3-22c3d121668a0d8305320a2f2955a7a3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

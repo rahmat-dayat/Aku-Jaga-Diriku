@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bermain Puzzle Bagian Kepala.mp3-ce03139dc02bcb2b4b67e9511d77b08c.mp3str"
+
+[deps]
+
+source_file="res://Asset/Body Puzzle/audio/Bermain Puzzle Bagian Kepala.mp3"
+dest_files=[ "res://.import/Bermain Puzzle Bagian Kepala.mp3-ce03139dc02bcb2b4b67e9511d77b08c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Maaf_2C_20Coba_20Lagi_20Ya.mp3-b8660f9dab28a3a72abcb3838611647e.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Maaf_2C_20Coba_20Lagi_20Ya.mp3"
+dest_files=[ "res://.import/Maaf_2C_20Coba_20Lagi_20Ya.mp3-b8660f9dab28a3a72abcb3838611647e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/animasi_scene_2014_20nabila_202.mp3-02764fa4bcf0c62fdad4e834c44200e6.mp3str"
+
+[deps]
+
+source_file="res://Scene/animasi/scene7_8/animasi_scene_2014_20nabila_202.mp3"
+dest_files=[ "res://.import/animasi_scene_2014_20nabila_202.mp3-02764fa4bcf0c62fdad4e834c44200e6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tepuk_20tangan.mp3-e27865c666545232dd2ea8f96f6d44d0.mp3str"
+
+[deps]
+
+source_file="res://Asset/audio/popUP/tepuk_20tangan.mp3"
+dest_files=[ "res://.import/tepuk_20tangan.mp3-e27865c666545232dd2ea8f96f6d44d0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

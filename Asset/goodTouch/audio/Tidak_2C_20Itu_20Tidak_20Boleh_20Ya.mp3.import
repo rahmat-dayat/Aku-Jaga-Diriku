@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tidak_2C_20Itu_20Tidak_20Boleh_20Ya.mp3-af66fd10e97b8775134fd806d6b1f3dd.mp3str"
+
+[deps]
+
+source_file="res://Asset/goodTouch/audio/Tidak_2C_20Itu_20Tidak_20Boleh_20Ya.mp3"
+dest_files=[ "res://.import/Tidak_2C_20Itu_20Tidak_20Boleh_20Ya.mp3-af66fd10e97b8775134fd806d6b1f3dd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

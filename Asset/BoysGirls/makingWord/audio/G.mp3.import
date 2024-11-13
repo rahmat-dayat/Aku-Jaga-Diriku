@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/G.mp3-ded1728230545d8c59b588421af8cae1.mp3str"
+
+[deps]
+
+source_file="res://Asset/BoysGirls/makingWord/audio/G.mp3"
+dest_files=[ "res://.import/G.mp3-ded1728230545d8c59b588421af8cae1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

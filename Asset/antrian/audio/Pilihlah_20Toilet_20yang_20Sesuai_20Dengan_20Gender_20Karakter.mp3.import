@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pilihlah_20Toilet_20yang_20Sesuai_20Dengan_20Gender_20Karakter.mp3-995338e2d1e2f97370e5f9dc3b0f559f.mp3str"
+
+[deps]
+
+source_file="res://Asset/antrian/audio/Pilihlah_20Toilet_20yang_20Sesuai_20Dengan_20Gender_20Karakter.mp3"
+dest_files=[ "res://.import/Pilihlah_20Toilet_20yang_20Sesuai_20Dengan_20Gender_20Karakter.mp3-995338e2d1e2f97370e5f9dc3b0f559f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
