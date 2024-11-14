@@ -3,14 +3,12 @@ extends Navigation2D
 export(float) var CHARACTER_SPEED = 400.0
 var path = []
 var soal_on = false
-var jalan = false
+
 # The 'click' event is a custom input action defined in
 # Project > Project Settings > Input Map tab
 func _input(event):
 	if event.is_action_pressed('left') and soal_on == false or event is InputEventScreenTouch and soal_on == false:
-		if jalan == true:
-			return
-		jalan = true
+		
 		MusicController.sfxSoundcopy()
 		_update_navigation_path($KinematicBody2D.position, get_local_mouse_position())
 
@@ -46,7 +44,7 @@ func move_along_path(distance):
 		distance -= distance_between_points
 		last_point = path[0]
 		path.remove(0)
-		jalan = false
+
 	# the character reached the end of the path
 	$KinematicBody2D.position = last_point
 	set_process(false)
